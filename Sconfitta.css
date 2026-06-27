@@ -1,0 +1,23 @@
+body {
+    background-image: url("Sfondo_CampoBasket.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(244, 143, 61, 0.7);
+    background-blend-mode:  lighten;
+}
+p {
+    font-size: 130px;
+    color:black;
+    font-weight: bold;
+    margin: 20px 0;
+}
+button {
+    font-size: 90px;
+    color:black;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    padding: 20px 40px;
+    cursor: pointer;
+}

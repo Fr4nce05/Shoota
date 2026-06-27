@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html LANG="IT">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Registrazione - Shoota</title>
+        <link rel="stylesheet" href="Registrazione.css"></link>
+    </head>
+    <body>
+        <img src="Sfondo_CampoBasket.png" width="1" height="1">
+        <div id="container">
+            <div id="form-block">
+                <p class="form-title">Registrazione</p>
+                <form onsubmit="event.preventDefault(); register();" class="register-container">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" class="input-field" placeholder="Scegli il tuo username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Scegli una password">
+                    <label for="confirm-password">Conferma Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" class="input-field" placeholder="Ripeti la password">
+                    <button id="register-btn" type="submit">Registrati</button>
+                    <div id="register-error" class="error-message" aria-live="polite"></div>
+                </form>
+            </div>
+            <a href="Shoota_Open.html" class="back-button">← Torna Indietro</a>
+        </div>
+        <canvas id="myCanvas"></canvas>
+        <script src="Registrazione.js"></script>
+    </body>
+</html>

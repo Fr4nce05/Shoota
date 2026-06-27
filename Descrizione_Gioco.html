@@ -1,0 +1,34 @@
+
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>REGOLE DEL GIOCO</title> 
+        <link rel="stylesheet" href="Descrizione_Gioco.css"></link>
+    </head>
+    <body>
+        <div id="container">
+            <div id="top">
+                <p>REGOLAMENTO</p>
+            </div>
+            <div id="bottom">
+                <ul>
+                    <li>Per avviare il gioco e giocare premere il pulsante "INIZIA A GIOCARE";</li><br>
+                    <li>Per muovere il pallone cliccare su di esso o su [space];</li> <br>
+                    <li>Centrare il canestro;</li><br>
+                    <li>Quando lo score è uguale a 0 il tabellone resta fermo, a ogni canestro conseguito la velocità di quest'ultimo aumenta minimamente;</li><br>
+                    <li>A ogni canestro conseguito lo score aumenta di 1, dopo aver perso tutte le vite lo Score torna a 0;</li><br>
+                    <li>Ogni 5 canestri di fila si recupera una vita (se non sono già 3) quando lo scorrere è maggiore del record, il record diventa lo score;</li><br>
+                    <li>Se si arriva a 0 vite, si perde il gioco</li><br>
+                    <li>Premendo il pulsante 'reset' si ripristinano score, vite e velocità del tabellone (il record rimane invariato).</li><br>
+                </ul>
+                <canvas id="myCanvas"></canvas> 
+                <div>
+                    <form action="CampoCanestro.html">
+                        <input type="submit" value="Torna al menù del gioco"><br/><br/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="Descrizione_Gioco.js"></script>
+    </body>
+</html>

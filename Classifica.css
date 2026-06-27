@@ -1,0 +1,119 @@
+body {
+    background-image: url("Sfondo_CampoBasket.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(244, 143, 61, 0.7);
+    background-blend-mode: lighten;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: auto;
+    width: 100%;
+    gap: 15px;
+    padding: 30px 20px 20px 20px;
+}
+
+.page-title {
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.score-content {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#score-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+    font-size: 28px;
+    padding: 15px 12px;
+    text-align: left;
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+th:first-child {
+    padding-left: 0;
+}
+
+td {
+    padding: 12px 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+td.default {
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+.close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.close-btn:hover {
+    transform: scale(1.2) rotate(90deg);
+    color: #FF6B6B;
+    text-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+}
+
+/* Posiziona il canvas dietro il contenuto */
+#myCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 40px;
+    }
+    
+    .score-content {
+        padding: 15px;
+    }
+    
+    th {
+        font-size: 20px;
+        padding: 10px 8px;
+    }
+    
+    td.default {
+        font-size: 18px;
+    }
+}

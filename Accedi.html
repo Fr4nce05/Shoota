@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html LANG="IT">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Accedi - Shoota</title>
+        <link rel="stylesheet" href="Accedi.css"></link>
+    </head>
+    <body>
+        <img src="Sfondo_CampoBasket.png" width="1" height="1">
+        <div id="container">
+            <div id="form-block">
+                <p class="form-title">Accedi</p>
+                <form onsubmit="event.preventDefault(); login();" class="login-container">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" class="input-field" placeholder="Inserisci il tuo username">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="input-field" placeholder="Inserisci la tua password">
+                    <button id="login-btn" type="submit">Accedi</button>
+                    <div id="login-error" class="error-message" aria-live="polite"></div>
+                </form>
+            </div>
+            <a href="Shoota_Open.html" class="back-button">← Torna Indietro</a>
+        </div>
+        <canvas id="myCanvas"></canvas>
+        <script src="Accedi.js"></script>
+    </body>
+</html>

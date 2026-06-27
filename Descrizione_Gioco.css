@@ -1,0 +1,61 @@
+body {
+    background-image: url("Sfondo_CampoBasket.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(244, 143, 61, 0.7);
+    background-blend-mode:  lighten;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#top {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#bottom {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+p {
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0;
+}
+li {
+    font-size: 25px;
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    padding: 2px;
+    margin: 2px 0;
+}
+input {
+    font-size: 38px;
+    color:black;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+p {
+    transform: translate(0%, -20%);
+}

@@ -1,0 +1,142 @@
+body {
+    background-image: url("Sfondo_CampoBasket.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(244, 143, 61, 0.7);
+    background-blend-mode: lighten;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: auto;
+    width: 100%;
+    gap: 15px;
+    padding: 30px 20px 20px 20px;
+}
+
+#form-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-title {
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.register-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    width: 100%;
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.input-field::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: normal;
+}
+
+#register-btn {
+    font-size: 22px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+#register-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    margin-top: 15px;
+    color: #b00020;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.back-button {
+    font-size: 24px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Posiziona il canvas dietro il contenuto */
+#myCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    #form-block {
+        padding: 20px;
+    }
+    
+    .form-title {
+        font-size: 36px;
+    }
+    
+    label {
+        font-size: 20px;
+    }
+    
+    .input-field {
+        font-size: 16px;
+    }
+    
+    #register-btn {
+        font-size: 22px;
+    }
+}

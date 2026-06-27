@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shoota</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CampoCanestro.css"></link>
+</head>
+<body>
+    <div id="volume-control">
+        <span id="volume-icon">🔊</span>
+        <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.7" aria-label="Volume" />
+    </div>
+    <audio id="campo-audio" src="Audio_CampoCanestro.mp3" loop></audio>
+    <canvas id="campo" width="800" height="600"></canvas>
+    <br>
+    <button id="reset">Reset</button>
+    <span id="score"></span>
+    <span id="record"></span>
+    <div id="lives-container">
+        <img src="palla.png" alt="Life" id="life1">
+        <img src="palla.png" alt="Life" id="life2">
+        <img src="palla.png" alt="Life" id="life3">
+    </div>
+    <button id="GIOCA">INIZIA A GIOCARE</button>
+    <div>
+        <form action="Descrizione_Gioco.html">
+            <input type="submit" value="Regolamento" id="regole"><br><br>
+        </form>
+        <form action="Shoota_Open.html">
+            <input type="submit" value="Esci" id="menu"><br/><br/>
+        </form>
+    </div>
+    <script src="CampoCanestro.js">
+
+    </script>
+</body>
+</html>

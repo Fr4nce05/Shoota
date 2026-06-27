@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html LANG="IT"> 
+    <head> 
+        <meta charset="utf-8"/>
+        <title>Sconfitta</title>
+        <link rel="stylesheet" href="Sconfitta.css"></link>
+    </head>
+    <body>
+        <p style="text-align: center;">😭HAI PERSO!😭</p><br>
+        <p id="score-display" style="text-align: center; font-size: 80px; color: black; font-weight: bold;"></p>
+        <p id="record-display" style="text-align: center; font-size: 70px; color: black; font-weight: bold;"></p>
+        <button onclick="window.location.href='CampoCanestro.html'">GIOCA ANCORA</button>
+        <script>
+            const lastScore = sessionStorage.getItem('lastScore');
+            const userRecord = sessionStorage.getItem('userRecord');
+            if (lastScore) {
+                document.getElementById('score-display').textContent = 'Punteggio: ' + lastScore;
+            }
+            if (userRecord) {
+                document.getElementById('record-display').textContent = 'Record: ' + userRecord;
+            }
+        </script>
+    </body>
+</html>
